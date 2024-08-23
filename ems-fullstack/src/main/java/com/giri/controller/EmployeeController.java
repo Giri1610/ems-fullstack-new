@@ -58,31 +58,4 @@ public class EmployeeController {
 		return ResponseEntity.ok(employeeDto);
 		
 	}
-
-	/*
-	 * @PutMapping("/employees/{id}") public ResponseEntity<Employee>
-	 * updateEmployee(@PathVariable Long id,
-	 * 
-	 * @RequestBody Employee employeeData) {
-	 * 
-	 * Employee employee = employeeRepository.findById(id) .orElseThrow(() -> new
-	 * ResourceNotFoundException("employee not exist with id" + id));
-	 * 
-	 * employee.setFirstName(employeeData.getFirstName());
-	 * employee.setLastName(employeeData.getLastName());
-	 * employee.setEmailId(employeeData.getEmailId());
-	 * 
-	 * Employee updateemployee = employeeRepository.save(employee); return
-	 * ResponseEntity.ok(updateemployee); }
-	 * 
-	 * @DeleteMapping("/employees/{id}") public ResponseEntity<Map<String, Boolean>>
-	 * deleteEmployee(@PathVariable Long id) { Employee employee =
-	 * employeeRepository.findById(id) .orElseThrow(() -> new
-	 * ResourceNotFoundException("Employee not exist with id :" + id));
-	 * employeeRepository.delete(employee); Map<String, Boolean> response = new
-	 * HashMap(); response.put("deleted", Boolean.TRUE); return
-	 * ResponseEntity.ok(response);
-	 * 
-	 * }
-	 */
 }

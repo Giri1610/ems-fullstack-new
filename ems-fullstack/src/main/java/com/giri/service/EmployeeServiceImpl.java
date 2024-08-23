@@ -23,15 +23,6 @@ public class EmployeeServiceImpl implements EmployeeService{
 		this.employeeRepository = employeeRepository;
 	}
 	
-
-	/*
-	 * public EmployeeDto createEmployeeDto(EmployeeDto employeeDto) { //TODO
-	 * Auto-generated method stub Employee employee=
-	 * EmployeeMapper.maptoEmployee(employeeDto); Employee savedEmployee =
-	 * employeeRepository.save(employee); return
-	 * EmployeeMapper.maptoEmployeeDto(savedEmployee); }
-	 */
-	
 	@Override
 	public EmployeeDto createEmployee(EmployeeDto employeeDto) {
 		Employee employee= EmployeeMapper.maptoEmployee(employeeDto);
