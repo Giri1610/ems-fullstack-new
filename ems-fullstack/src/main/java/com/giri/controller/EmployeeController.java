@@ -45,6 +45,7 @@ public class EmployeeController {
 		return ResponseEntity.ok(employeedto);
 		
 	}
+	//below endpoint for getallemployees
 	@GetMapping("/employees")
 	public ResponseEntity<List<EmployeeDto>> getAllEmployees() {
 		 List<EmployeeDto> employees = employeeservice.getAllEmployees();
